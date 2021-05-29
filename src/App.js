@@ -111,8 +111,24 @@ function App() {
         //align items brings things in centre of perpendicular axis
       }}
     >
-      {/* Calculation area */}
-      <div
+
+{/* Outer Design */}
+<div style = {{
+  display: "flex",
+  flexDirection: "column",
+  background: "#444444",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "15px",
+  borderRadius: "10px"
+}}>
+<h3 style = {{
+  color: "white",
+  fontSize: "25px",
+  fontFamily: "sans-serif",
+}}>Awesome Calculator</h3>
+{/* Calculation area */}
+<div
         style={{
           width: "400px",
           background: "#ffffff",
@@ -172,6 +188,11 @@ function App() {
           );
         })}
       </div>
+</div>
+
+
+
+      
     </div>
   );
 }
